@@ -1,0 +1,14 @@
+<h1>Allergy Data</h1>
+
+<a href="/allergy/new">
+<button class="createButton">
+    Create Allergy Item
+</button>
+</a>
+
+{{#each allAllergy}}
+    <a href="/allergy/{{_id}}">
+        <p class="category">{{category}}</p>
+        <p class="name">{{name}}</p>
+    </a>
+{{/each}}

@@ -18,6 +18,8 @@ const methodOverride = require('method-override')
  *
  */
 const { handicapRouter } = require('./controllers/handicap.js')
+const { allergyRouter } = require('./controllers/allergy.js')
+
 
 /* Step 3
  *
@@ -61,6 +63,8 @@ app.set('view engine', 'hbs')
  * the paths defined in the router.
  */
 app.use('/', handicapRouter)
+app.use('/', allergyRouter)
+
 
 /* Step 5
  *
