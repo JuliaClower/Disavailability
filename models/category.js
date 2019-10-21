@@ -3,7 +3,11 @@ const mongoose = require('./connection.js')
 const CategoryModelSchema = new mongoose.Schema({
  category: String, 
  description: String, 
- picture: String
+ picture: String,
+ subCats: {
+   type: Schema.Types.ObjectId, 
+   ref: 'SubCatSchema'
+ } 
 })
 
 const CategoryCollection = mongoose.model('Category', CategoryModelSchema)

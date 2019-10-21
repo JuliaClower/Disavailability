@@ -25,7 +25,7 @@ categoryRouter.get('/category', (req, res) => {
 })
 //getOne
 categoryRouter.get('/category/:id', (req, res) => {
-  categoryApi.getOneCategory(req.params.id)
+  categoryApi.getOneCategory(req.params.id).populate('subCat')
   .then((oneCategory) => {
     res.render('oneCategory', oneCategory)
   })

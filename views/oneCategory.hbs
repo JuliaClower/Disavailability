@@ -7,3 +7,10 @@
 <form action="/category/{{_id}}?_method=DELETE" method="POST">
     <input class="createButton" type="submit" value="Delete Category" />
 </form>
+{{#each categories.subCats}}
+    <a href="/category/{{_id}}/subCats">
+        <p class="category">{{category}}</p>
+        <p class="description">{{description}}</p>
+        <p class="picture">{{picture}}</p>
+    </a>
+{{/each}}
