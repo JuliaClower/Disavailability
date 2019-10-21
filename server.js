@@ -18,7 +18,7 @@ const methodOverride = require('method-override')
  *
  */
 const { categoryRouter } = require('./controllers/category.js')
-
+const { subCatRouter } = require('./controllers/subCat.js')
 
 /* Step 3
  *
@@ -62,6 +62,7 @@ app.set('view engine', 'hbs')
  * the paths defined in the router.
  */
 app.use('/', categoryRouter)
+app.use('/', subCatRouter)
 
 /* Step 5
  *

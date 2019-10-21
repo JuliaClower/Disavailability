@@ -10,8 +10,8 @@ categoryRouter.get('/category/new', (req, res) => {
 })
 
 //edit category form
-categoryRouter.get('/category/edit/:id', (req, res) => {
-  categoryApi.getOneCategory(req.params.id)
+categoryRouter.get('/category/edit/:catId', (req, res) => {
+  categoryApi.getOneCategory(req.params.catId)
     .then((oneCategory) => {
       res.render('editCategoryForm', oneCategory)
     })
@@ -24,8 +24,8 @@ categoryRouter.get('/category', (req, res) => {
   })
 })
 //getOne
-categoryRouter.get('/category/:id', (req, res) => {
-  categoryApi.getOneCategory(req.params.id).populate('subCat')
+categoryRouter.get('/category/:catId', (req, res) => {
+  categoryApi.getOneCategory(req.params.catId).populate('SubCatSchema')
   .then((oneCategory) => {
     res.render('oneCategory', oneCategory)
   })
@@ -38,15 +38,15 @@ categoryRouter.post('/category', (req, res) => {
   })
 })
 //update
-categoryRouter.put('/category/:id', (req, res) => {
-  categoryApi.updateCategory(req.params.id, req.body)
+categoryRouter.put('/category/:catId', (req, res) => {
+  categoryApi.updateCategory(req.params.catId, req.body)
   .then((updatedCategory) => {
-    res.redirect(`/category/${req.params.id}`)
+    res.redirect(`/category/${req.params.catId}`)
   })
 })
 //delete
-categoryRouter.delete('/category/:id', (req, res) => {
-  categoryApi.deleteCategory(req.params.id)
+categoryRouter.delete('/category/:catId', (req, res) => {
+  categoryApi.deleteCategory(req.params.catId)
   .then((deletedCategory) => {
     res.redirect('/category')
   })

@@ -4,8 +4,8 @@ const CategoryModelSchema = new mongoose.Schema({
  category: String, 
  description: String, 
  picture: String,
- subCats: {
-   type: Schema.Types.ObjectId, 
+ subCat: {
+   type: mongoose.Schema.Types.ObjectId, 
    ref: 'SubCatSchema'
  } 
 })
