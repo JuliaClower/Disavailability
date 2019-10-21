@@ -1,0 +1,25 @@
+<h1>One Mental Health</h1>
+
+<p>Category: {{category}}</p>
+<p>Name: {{name}}</p>
+<p>Depression Help: {{depressionHelp}}</p>
+<p>Anxiety Help: {{anxietyHelp}}</p>
+<p>PTSD Help: {{ptsdHelp}}</p>
+<p>Description: {{description}}</p>
+<p>Google Map: {{picture}}</p>
+
+    <a href="/mentalHealth/edit/{{_id}}">
+        <button class="createButton">
+            Edit Mental Health
+        </button>
+    </a>
+    <form action="/mentalHealth/{{_id}}?_method=DELETE" method="POST">
+        <input class="createButton" type="submit" value="Delete Issue" />
+    </form>
+
+
+
+    <a href="/mentalHealth">
+        <input class="createButton" type="submit" value="Back to Main Mental Health" />
+    </a>
+</div>

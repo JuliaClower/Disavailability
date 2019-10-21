@@ -1,0 +1,14 @@
+<h1>Mental Health Data</h1>
+
+<a href="/mentalHealth/new">
+<button class="createButton">
+    Create Mental Health
+</button>
+</a>
+
+{{#each allMentalHealth}}
+    <a href="/mentalHealth/{{_id}}">
+        <p class="category">{{category}}</p>
+        <p class="name">{{name}}</p>
+    </a>
+{{/each}}
