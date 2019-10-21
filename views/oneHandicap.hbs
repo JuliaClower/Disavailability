@@ -7,18 +7,16 @@
 <p>Description: {{description}}</p>
 <p>Google Map: {{picture}}</p>
 
-    <a href="/handicap/edit/{{_id}}">
-        <button class="createButton">
-            Edit Handica
-        </button>
-    </a>
-    <form action="/handicap/{{_id}}?_method=DELETE" method="POST">
-        <input class="createButton" type="submit" value="Delete Issue" />
-    </form>
+<a href="/handicap/edit/{{_id}}">
+    <button class="allButton">
+        Edit Handicap
+    </button>
+</a>
+<form action="/handicap/{{_id}}?_method=DELETE" method="POST">
+    <input class="allButton" type="submit" value="Delete Issue" />
+</form>
 
-
-
-    <a href="/handicap">
-        <input class="createButton" type="submit" value="Back to Handicap" />
-    </a>
+<a href="/handicap">
+    <input class="allButton" type="submit" value="Back to Handicap" />
+</a>
 </div>

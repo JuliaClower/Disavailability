@@ -10,17 +10,17 @@
 <p>Picture: {{picture}}</p>
 
     <a href="/allergy/edit/{{_id}}">
-        <button class="createButton">
+        <button class="allButton">
             Edit Allergy
         </button>
     </a>
     <form action="/allergy/{{_id}}?_method=DELETE" method="POST">
-        <input class="createButton" type="submit" value="Delete Allergy" />
+        <input class="allButton" type="submit" value="Delete Allergy" />
     </form>
 
 
 
     <a href="/allergy">
-        <input class="createButton" type="submit" value="Back to Allergy" />
+        <input class="allButton" type="submit" value="Back to Allergy" />
     </a>
 </div>
