@@ -20,6 +20,7 @@ const methodOverride = require('method-override')
 const { handicapRouter } = require('./controllers/handicap.js')
 const { allergyRouter } = require('./controllers/allergy.js')
 const { mentalHealthRouter } = require('./controllers/mentalHealth.js')
+const { landingRouter } = require('./controllers/landing.js')
 
 
 
@@ -67,6 +68,7 @@ app.set('view engine', 'hbs')
 app.use('/', handicapRouter)
 app.use('/', allergyRouter)
 app.use('/', mentalHealthRouter)
+app.use('/', landingRouter)
 
 
 /* Step 5
