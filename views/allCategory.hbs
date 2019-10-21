@@ -1,0 +1,15 @@
+<h1>Disavailability Categories</h1>
+
+<a href="/category/new">
+<button class="createButton">
+    Create Category
+</button>
+</a>
+
+{{#each allCategory}}
+    <a href="/category/{{_id}}">
+        <p class="category">{{category}}</p>
+        <p class="description">{{description}}</p>
+        <p class="picture">{{picture}}</p>
+    </a>
+{{/each}}

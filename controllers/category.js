@@ -4,36 +4,48 @@ const categoryApi = require('../models/category.js')
 
 const categoryRouter = express.Router()
 
+//new category form
+categoryRouter.get('/category/new', (req, res) => {
+  res.render('newCategoryForm')
+})
+
+//edit category form
+categoryRouter.get('/category/edit/:id', (req, res) => {
+  categoryApi.getOneCategory(req.params.id)
+    .then((oneCategory) => {
+      res.render('editCategoryForm', oneCategory)
+    })
+})
 //getAll
-categoryRouter.get('/category', (res, req) => {
+categoryRouter.get('/category', (req, res) => {
   categoryApi.getAllCategory()
   .then((allCategory) => {
     res.render('allCategory', {allCategory})
   })
 })
 //getOne
-categoryRouter.get('/category/id', (res, req) => {
+categoryRouter.get('/category/:id', (req, res) => {
   categoryApi.getOneCategory(req.params.id)
   .then((oneCategory) => {
     res.render('oneCategory', oneCategory)
   })
 })
 //create
-categoryRouter.create('/category', (req, res) => {
+categoryRouter.post('/category', (req, res) => {
   categoryApi.createCategory(req.body)
   .then((newCategoryData) => {
     res.redirect('/category')
   })
 })
 //update
-categoryRouter.update('/category/id', (req, res) => {
+categoryRouter.put('/category/:id', (req, res) => {
   categoryApi.updateCategory(req.params.id, req.body)
   .then((updatedCategory) => {
-    res.redirect('/category/${req.params.id}')
+    res.redirect(`/category/${req.params.id}`)
   })
 })
 //delete
-categoryRouter.delete('/category/id', (req, res) => {
+categoryRouter.delete('/category/:id', (req, res) => {
   categoryApi.deleteCategory(req.params.id)
   .then((deletedCategory) => {
     res.redirect('/category')

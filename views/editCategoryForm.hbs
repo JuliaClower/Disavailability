@@ -1,0 +1,9 @@
+<h1>Edit Category</h1>
+
+<form action="/category/{{_id}}?_method=PUT" method="POST"/>
+    <input type="text" name="category" placeholder="category" value="{{category}}" />
+    <input type="text" name="description" placeholder="description" value="{{description}}" />
+    <input type="text" name="picture" placeholder="picture" value="{{picture}}"/>
+
+    <input type="submit"    value="Save"/>
+</form>
