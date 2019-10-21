@@ -1,0 +1,18 @@
+<h1>Handicap Data</h1>
+
+<a href="/handicap/new">
+<button class="createButton">
+    Create Handicap
+</button>
+</a>
+
+{{#each allHandicap}}
+    <a href="/handicap/{{_id}}">
+        <p class="category">{{category}}</p>
+        <p class="name">{{name}}</p>
+        {{!-- <p class="parkingAccessible">{{parkingAccessible}}</p>
+        <p class="bathroomAccessible">{{bathroomAccessible}}</p>
+        <p class="description">{{description}}</p>
+        <p class="picture">{{picture}}</p> --}}
+    </a>
+{{/each}}

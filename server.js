@@ -17,8 +17,7 @@ const methodOverride = require('method-override')
  * import routers from controllers/
  *
  */
-const { categoryRouter } = require('./controllers/category.js')
-const { subCatRouter } = require('./controllers/subCat.js')
+const { handicapRouter } = require('./controllers/handicap.js')
 
 /* Step 3
  *
@@ -61,8 +60,7 @@ app.set('view engine', 'hbs')
  * add router for the application to use. The first argument is a prefix to all
  * the paths defined in the router.
  */
-app.use('/', categoryRouter)
-app.use('/', subCatRouter)
+app.use('/', handicapRouter)
 
 /* Step 5
  *

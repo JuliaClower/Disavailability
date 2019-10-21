@@ -1,0 +1,24 @@
+<h1>One Handicap</h1>
+
+<p>Category: {{category}}</p>
+<p>Name: {{name}}</p>
+<p>Parking Accessible: {{parkingAccessible}}</p>
+<p>Bathroom Accessible: {{bathroomAccessible}}</p>
+<p>Description: {{description}}</p>
+<p>Google Map: {{picture}}</p>
+
+    <a href="/handicap/edit/{{_id}}">
+        <button class="createButton">
+            Edit Handicap
+        </button>
+    </a>
+    <form action="/handicap/{{_id}}?_method=DELETE" method="POST">
+        <input class="createButton" type="submit" value="Delete Issue" />
+    </form>
+
+
+
+    <a href="/handicap">
+        <input class="createButton" type="submit" value="Back to Handicap" />
+    </a>
+</div>

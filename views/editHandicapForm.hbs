@@ -1,0 +1,12 @@
+<h1>Edit Category</h1>
+
+<form action="/handicap/{{_id}}?_method=PUT" method="POST"/>
+    <input type="text" name="category" placeholder="category" value="{{category}}"/>
+    <input type="text" name="name" placeholder="name" value="{{name}}"/>
+    <input type="text" name="parkingAccessible" placeholder="parkingAccessible" value="{{parkingAccessible}}"/>
+    <input type="text" name="bathroomAccessible" placeholder="bathroomAccessible" value="{{bathroomAccessible}}"/>
+    <input type="text" name="description" placeholder="description" value="{{description}}"/>
+    <input type="text" name="picture" placeholder="picture" value="{{picture}}"/>
+
+    <input type="submit"    value="Save"/>
+</form>
