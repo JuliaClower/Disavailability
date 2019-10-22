@@ -5,7 +5,7 @@ const landingApi = require('../models/landing.js')
 const landingRouter = express.Router()
 
 //landing page
-landingRouter.get('/landing', (req, res) => {
+landingRouter.get('/', (req, res) => {
   res.render('landingView')
 })
 
