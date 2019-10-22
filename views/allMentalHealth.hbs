@@ -1,21 +1,23 @@
 <h1>Mental Health Data</h1>
 
-<a href="/mentalHealth/new">
-<button class="allButton">
-    Create Mental Health
-</button>
-</a>
+<div class="button-bar">
 
-<a href="/">
-<button class="allButton">
-    Back to Landing Page
-</button>
-</a>
+    <a href="/mentalHealth/new">
+        <button class="allButton">
+            Create Mental Health
+        </button>
+    </a>
 
+    <a href="/">
+        <button class="allButton">
+            Back to Landing Page
+        </button>
+    </a>
+</div>
 
 {{#each allMentalHealth}}
-    <a href="/mentalHealth/{{_id}}">
-        <p class="category">{{category}}</p>
-        <p class="name">{{name}}</p>
-    </a>
+<a href="/mentalHealth/{{_id}}">
+    <p class="category">{{category}}</p>
+    <p class="name">{{name}}</p>
+</a>
 {{/each}}

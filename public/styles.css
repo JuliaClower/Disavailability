@@ -1,6 +1,10 @@
 html {
     background-color: honeydew;
 }
+.button-bar {
+	display: flex;
+	justify-content: space-between;
+}
 .allButton {
 	box-shadow: 0px 1px 0px 0px #276873;
 	background:linear-gradient(to bottom, #599bb3 5%, #408c99 100%);
@@ -43,7 +47,7 @@ h2 {
 	display: flex; 
 	justify-content: space-evenly;
 }
-a {
+.main-link {
 	width: 400px;
 	border: 3px solid #276873;
 	background-color: #276873;

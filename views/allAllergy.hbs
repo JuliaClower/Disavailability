@@ -1,20 +1,21 @@
 <h1>Allergy Data</h1>
 
-<a href="/allergy/new">
-<button class="allButton">
-    Create Allergy Item
-</button>
-</a>
-
-<a href="/">
-<button class="allButton">
-    Back to Landing Page
-</button>
-</a>
-
-{{#each allAllergy}}
-    <a href="/allergy/{{_id}}">
-        <p class="category">{{category}}</p>
-        <p class="name">{{name}}</p>
+<div class="button-bar">
+    <a href="/allergy/new">
+        <button class="allButton">
+            Create Allergy Item
+        </button>
     </a>
+
+    <a href="/">
+        <button class="allButton">
+            Back to Landing Page
+        </button>
+    </a>
+</div>
+{{#each allAllergy}}
+<a href="/allergy/{{_id}}">
+    <p class="category">{{category}}</p>
+    <p class="name">{{name}}</p>
+</a>
 {{/each}}
