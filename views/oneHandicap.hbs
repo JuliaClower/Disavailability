@@ -4,19 +4,22 @@
 <p>Name: {{name}}</p>
 <p>Parking Accessible: {{parkingAccessible}}</p>
 <p>Bathroom Accessible: {{bathroomAccessible}}</p>
-<p>Description: {{description}}</p>
-<p>Google Map: {{picture}}</p>
+<p>Description: {{description}}</p> <br>
+{{#if picture}}
+<img src="{{picture}}" />
+{{/if}}
+<br>
+<div class="button-bar">
+    <a href="/handicap/edit/{{_id}}">
+        <button class="allButton">
+            Edit Handicap
+        </button>
+    </a>
+    <form action="/handicap/{{_id}}?_method=DELETE" method="POST">
+        <input class="allButton" type="submit" value="Delete Issue" />
+    </form>
 
-<a href="/handicap/edit/{{_id}}">
-    <button class="allButton">
-        Edit Handicap
-    </button>
-</a>
-<form action="/handicap/{{_id}}?_method=DELETE" method="POST">
-    <input class="allButton" type="submit" value="Delete Issue" />
-</form>
-
-<a href="/handicap">
-    <input class="allButton" type="submit" value="Back to Handicap" />
-</a>
+    <a href="/handicap">
+        <input class="allButton" type="submit" value="Back to Handicap" />
+    </a>
 </div>

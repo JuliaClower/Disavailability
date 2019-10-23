@@ -93,3 +93,16 @@ p {
 .data:hover {
 	background-color: #7e9eaa;
 }
+form {
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+}
+.description-box {
+	height: 50px; 
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	font-size: 20px;
+}
+input, select {
+	font-size: 20px; 
+}
