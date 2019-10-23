@@ -4,6 +4,8 @@ html {
 .button-bar {
 	display: flex;
 	justify-content: space-between;
+	margin-right: 60px;
+	margin-left: 60px;
 }
 .allButton {
 	box-shadow: 0px 1px 0px 0px #276873;
@@ -55,4 +57,39 @@ h2 {
 }
 img {
 	width: 400px; 
+}
+a {
+	text-decoration: none;
+	color: black; 
+}
+.data {
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	display: flex; 
+	justify-content: space-between;
+	border-collapse: collapse;
+}
+.table-top {
+	background-color: #408c99;
+	margin-top: 20px;
+	font-weight: bold;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
+	display: flex; 
+	justify-content: space-between;
+	border-collapse: collapse;
+}
+p {
+	text-align: left; 
+	border: 1px solid black;
+	width: 100%; 
+	padding: 8px; 
+	margin: 0; 
+	border-collapse: collapse;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.data:hover {
+	background-color: #7e9eaa;
 }

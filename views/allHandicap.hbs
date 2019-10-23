@@ -1,13 +1,11 @@
 <h1>Handicap Data</h1>
 
 <div class="button-bar">
-
     <a href="/handicap/new">
         <button class="allButton">
             Create Handicap
         </button>
     </a>
-
     <a href="/">
         <button class="allButton">
             Back to Landing Page
@@ -15,13 +13,22 @@
     </a>
 </div>
 
+<div class="table-top">
+    <p>Category</p>
+    <p>Name</p>
+    <p>Parking Accessible</p>
+    <p>Bathroom Accessible</p>
+    <p>Description</p>
+</div>
+
 {{#each allHandicap}}
 <a href="/handicap/{{_id}}">
-    <p class="category">{{category}}</p>
-    <p class="name">{{name}}</p>
-    {{!-- <p class="parkingAccessible">{{parkingAccessible}}</p>
+    <div class="data">
+        <p class="category">{{category}}</p>
+        <p class="name">{{name}}</p>
+        <p class="parkingAccessible">{{parkingAccessible}}</p>
         <p class="bathroomAccessible">{{bathroomAccessible}}</p>
         <p class="description">{{description}}</p>
-        <p class="picture">{{picture}}</p> --}}
+    </div>
 </a>
 {{/each}}
