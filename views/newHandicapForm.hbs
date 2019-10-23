@@ -1,12 +1,25 @@
 <h1>Create New Handicap</h1>
 
-<form action="/handicap" method="POST"/>
-    <input type="text" name="category" placeholder="category" />
-    <input type="text" name="name" placeholder="name" />
-    <input type="text" name="parkingAccessible" placeholder="parkingAccessible" />
-    <input type="text" name="bathroomAccessible" placeholder="bathroomAccessible" />
-    <input type="text" name="description" placeholder="description" />
-    <input type="text" name="picture" placeholder="picture" />
-
-    <input class="allButton" type="submit"    value="Create"/>
+<form action="/handicap" method="POST" />
+Category: <br>
+<select name="category">
+    <option value="Restaurant">Restaurant</option>
+    <option value="Product">Product</option>
+    <option value="Shopping Center">Shopping Center</option>
+    <option value="Doctor">Doctor</option>
+</select><br>
+Name:<br>
+<input type="text" name="name" placeholder="name"/><br>
+Parking Accessible:<br>
+<input type="radio" name="parkingAccessible" value="true"/>Yes<br>
+<input type="radio" name="parkingAccessible" value="false"/>No<br>
+Bathroom Accessible:<br>
+<input type="radio" name="bathroomAccessible" value="true"/>Yes<br>
+<input type="radio" name="bathroomAccessible"value="false"/>No<br>
+Description:<br>
+<textarea rows="2" cols="25" name="description" class="description-box" placeholder="Description...">
+</textarea> <br>
+Image:<br>
+<input type="text" name="picture" placeholder="image url" /><br><br>
+<input type="submit" value="Create New" class="allButton" />
 </form>
