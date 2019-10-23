@@ -89,6 +89,8 @@ p {
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
+	font-size: 20px;
+	font-family: 'Lato', sans-serif;
 }
 .data:hover {
 	background-color: #7e9eaa;
@@ -105,4 +107,13 @@ form {
 }
 input, select {
 	font-size: 20px; 
+}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 50%;
+}
+.nolist {
+	border: none;
 }
