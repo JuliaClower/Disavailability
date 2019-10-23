@@ -108,7 +108,7 @@ form {
 input, select {
 	font-size: 20px; 
 }
-img {
+.onePicture {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
