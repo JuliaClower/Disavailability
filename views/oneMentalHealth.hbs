@@ -1,16 +1,22 @@
-<h1>One Mental Health</h1>
+<h1>{{name}}</h1>
 
-<p>Category: {{category}}</p>
-<p>Name: {{name}}</p>
-<p>Depression Help: {{depressionHelp}}</p>
-<p>Anxiety Help: {{anxietyHelp}}</p>
-<p>PTSD Help: {{ptsdHelp}}</p>
-<p>Description: {{description}}</p>
-<p>Google Map: {{picture}}</p>
+<div class="content">
+    <p class="nolist">Category: {{category}}</p>
+    <p class="nolist">Name: {{name}}</p>
+    <p class="nolist">Depression Help: {{depressionHelp}}</p>
+    <p class="nolist">Anxiety Help: {{anxietyHelp}}</p>
+    <p class="nolist">PTSD Help: {{ptsdHelp}}</p>
+    <p class="nolist">Description: {{description}}</p>
+</div>
 
+{{#if picture}}
+<img class="onePicture" src="{{picture}}" />
+{{/if}}
+<br>
+<div class="button-bar">
     <a href="/mentalHealth/edit/{{_id}}">
         <button class="allButton">
-            Edit Mental Health
+            Edit Content
         </button>
     </a>
     <form action="/mentalHealth/{{_id}}?_method=DELETE" method="POST">
