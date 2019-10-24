@@ -16,4 +16,6 @@ Disavailability is online database where users can store and share data about th
 * Deployed via Heroku
 
 #### Wireframe and ERD
-![alt-text](public/wireframe1.jpg)
+![alt-text](public/wireframe1.jpg "Wireframe Main Page")
+![alt-text](public/wireframe2.jpg "Wireframe Sub-Pages")
+![alt-text](public/ERD.jpg "ERD")
