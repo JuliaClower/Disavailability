@@ -1,0 +1,36 @@
+<h1>Dietary Preference Data</h1>
+
+<div class="button-bar">
+    <a href="/dietaryPref/new">
+        <button class="allButton">
+            Create New Content
+        </button>
+    </a>
+    <a href="/">
+        <button class="allButton">
+            Back to Landing Page
+        </button>
+    </a>
+</div>
+
+<div class="table-top">
+    <p>Category</p>
+    <p>Name</p>
+    <p>Diet Conscious</p>
+    <p>Vegetarian Friendly</p>
+    <p>Vegan Friendly</p>
+    <p>Keto Friendly</p>
+    <p>Description</p>
+</div>
+{{#each allDietaryPref}}
+<a href="/dietaryPref/{{_id}}">
+    <p class="category">{{category}}</p>
+    <p class="name">{{name}}</p>
+    <p class="dietaryPrefFriendly">{{dietaryPrefFriendly}}</p>
+    <p class="vetarianFriendly">{{vegetarianFriendly}}</p>
+    <p class="veganFriendly">{{veganFriendly}}</p>
+    <p class="ketoFriendly">{{ketoFriendly}}</p>
+    <p class="description">{{description}}</p>
+</a>
+{{/each}}
+
