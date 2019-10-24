@@ -12,10 +12,24 @@
         </button>
     </a>
 </div>
+<div class="table-top">
+    <p>Category</p>
+    <p>Name</p>
+    <p>Helps with Depression</p>
+    <p>Helps with Anxiety</p>
+    <p>Helps with PTSD</p>
+    <p>Description</p>
+</div>
 
 {{#each allMentalHealth}}
 <a href="/mentalHealth/{{_id}}">
-    <p class="category">{{category}}</p>
-    <p class="name">{{name}}</p>
+    <div class="data">
+        <p class="category">{{category}}</p>
+        <p class="name">{{name}}</p>
+        <p class="depressionHelp">{{depressionHelp}}</p>
+        <p class="anxietyHelp">{{anxietyHelp}}</p>
+        <p class="ptsdHelp">{{ptsdHelp}}</p>
+        <p class="description">{{description}}</p>
+    </div>
 </a>
 {{/each}}
