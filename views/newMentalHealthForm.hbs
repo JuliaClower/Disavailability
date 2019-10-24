@@ -1,13 +1,28 @@
 <h1>New Mental Health Awareness Content</h1>
+<div class="content">
+<form action="/mentalHealth" method="POST" />
+<select name="category">
+    <option value="Restaurant">Restaurant</option>
+    <option value="Product">Product</option>
+    <option value="Shopping Center">Shopping Center</option>
+    <option value="Doctor">Doctor</option>
+</select><br>
+Name:<br>
+<input type="text" name="name" placeholder="name" /><br>
+Help with Depression:<br>
+<input type="radio" name="depressionHelp" value="true" /><br>
+<input type="radio" name="depressionHelp" value="false" /><br>
+Help with Anxiety:<br>
+<input type="radio" name="anxietyHelp" value="true" /><br>
+<input type="radio" name="anxietyHelp" value="false" /><br>
+Help with PTSD:<br>
+<input type="radio" name="ptsdHelp" value="true" /><br>
+<input type="radio" name="ptsdHelp" value="false" /><br>
+Description: <br>
+<input type="text" name="description" placeholder="description" /><br>
+Image:<br>
+<input type="text" name="picture" placeholder="picture" /><br><br>
 
-<form action="/mentalHealth" method="POST"/>
-    <input type="text" name="category" placeholder="category" />
-    <input type="text" name="name" placeholder="name" />
-    <input type="text" name="depressionHelp" placeholder="depressionHelp" />
-    <input type="text" name="anxietyHelp" placeholder="anxietyHelp" />
-    <input type="text" name="ptsdHelp" placeholder="ptsdHelp" />
-    <input type="text" name="description" placeholder="description" />
-    <input type="text" name="picture" placeholder="picture" />
-
-    <input class="allButton" type="submit"    value="Create"/>
+<input class="allButton" type="submit" value="Create" />
 </form>
+</div>

@@ -1,14 +1,31 @@
-<h1>Create New Allergy</h1>
-
-<form action="/allergy" method="POST"/>
-    <input type="text" name="category" placeholder="category"/>
-    <input type="text" name="name" placeholder="name"/>
-    <input type="text" name="allergyFriendly" placeholder="allergyFriendly" />
-    <input type="text" name="vegetarianFriendly" placeholder="vegetarianFriendly" />
-    <input type="text" name="veganFriendly" placeholder="veganFriendly" />
-    <input type="text" name="ketoFriendly" placeholder="ketoFriendly" />
-    <input type="text" name="description" placeholder="description" />
-    <input type="text" name="picture" placeholder="picture" />
-
+<h1>Create New Dietary Content</h1>
+<div class="content">
+    <form action="/dietaryPref" method="POST" />
+    Category: <br>
+    <select name="category">
+        <option value="Restaurant">Restaurant</option>
+        <option value="Product">Product</option>
+        <option value="Shopping Center">Shopping Center</option>
+        <option value="Doctor">Doctor</option>
+    </select><br>
+    Name: <br>
+    <input type="text" name="name" placeholder="name" /><br>
+    Diet Conscious: <br>
+    <input type="radio" name="dietaryPrefFriendly" value="true" />Yes<br>
+    <input type="radio" name="dietaryPrefFriendly" value="false" />No<br>
+    Vegetarian Friendly:<br>
+    <input type="radio" name="vegetarianFriendly" value="true" />Yes<br>
+    <input type="radio" name="vegetarianFriendly" value="false" />No<br>
+    Vegan Friendly: <br>
+    <input type="radio" name="veganFriendly" value="true" />Yes<br>
+    <input type="radio" name="veganFriendly" value="false" />No<br>
+    Keto Friendly: <br>
+    <input type="radio" name="ketoFriendly" value="true" />Yes<br>
+    <input type="radio" name="ketoFriendly" value="false" />No<br>
+    Description: <br>
+    <input type="text" name="description" placeholder="description" /><br>
+    Image: <br>
+    <input type="text" name="picture" placeholder="picture" /><br><br>
     <input class="allButton" type="submit" value="Save" />
-</form>
+    </form>
+</div>
