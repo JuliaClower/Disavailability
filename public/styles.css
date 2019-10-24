@@ -117,3 +117,7 @@ input, select {
 .nolist {
 	border: none;
 }
+.content {
+	margin-left: 300px; 
+	line-height: 30px;
+}

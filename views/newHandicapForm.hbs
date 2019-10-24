@@ -1,25 +1,27 @@
-<h1>Create New Handicap</h1>
-
-<form action="/handicap" method="POST" />
-Category: <br>
-<select name="category">
-    <option value="Restaurant">Restaurant</option>
-    <option value="Product">Product</option>
-    <option value="Shopping Center">Shopping Center</option>
-    <option value="Doctor">Doctor</option>
-</select><br>
-Name:<br>
-<input type="text" name="name" placeholder="name"/><br>
-Parking Accessible:<br>
-<input type="radio" name="parkingAccessible" value="true"/>Yes<br>
-<input type="radio" name="parkingAccessible" value="false"/>No<br>
-Bathroom Accessible:<br>
-<input type="radio" name="bathroomAccessible" value="true"/>Yes<br>
-<input type="radio" name="bathroomAccessible"value="false"/>No<br>
-Description:<br>
-<textarea rows="2" cols="25" name="description" class="description-box" placeholder="Description...">
+<h1>New Handicap Accessible Content</h1>
+<div class="content">
+    <form action="/handicap" method="POST" />
+    Category: <br>
+    <select name="category">
+        <option value="Restaurant">Restaurant</option>
+        <option value="Product">Product</option>
+        <option value="Shopping Center">Shopping Center</option>
+        <option value="Doctor">Doctor</option>
+    </select><br>
+    Name:<br>
+    <input type="text" name="name" placeholder="name" /><br>
+    Parking Accessible:<br>
+    <input type="radio" name="parkingAccessible" value="true" />Yes<br>
+    <input type="radio" name="parkingAccessible" value="false" />No<br>
+    Bathroom Accessible:<br>
+    <input type="radio" name="bathroomAccessible" value="true" />Yes<br>
+    <input type="radio" name="bathroomAccessible" value="false" />No<br>
+    Description:<br>
+    <textarea rows="2" cols="25" name="description" class="description-box" placeholder="Description...">
 </textarea> <br>
-Image:<br>
-<input type="text" name="picture" placeholder="image url" /><br><br>
+    Image:<br>
+    <input type="text" name="picture" placeholder="image url" /><br><br>
+
 <input type="submit" value="Create New" class="allButton" />
 </form>
+</div>

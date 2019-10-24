@@ -1,10 +1,13 @@
 <h1>{{name}}</h1>
 
-<p class="nolist">Category: {{category}}</p>
-<p class="nolist">Name: {{name}}</p>
-<p class="nolist">Parking Accessible: {{parkingAccessible}}</p>
-<p class="nolist">Bathroom Accessible: {{bathroomAccessible}}</p>
-<p class="nolist">Description: {{description}}</p> <br>
+<div class="content">
+    <p class="nolist">Category: {{category}}</p>
+    <p class="nolist">Name: {{name}}</p>
+    <p class="nolist">Parking Accessible: {{parkingAccessible}}</p>
+    <p class="nolist">Bathroom Accessible: {{bathroomAccessible}}</p>
+    <p class="nolist">Description: {{description}}</p> <br>
+</div>
+
 {{#if picture}}
 <img class="onePicture" src="{{picture}}" />
 {{/if}}
@@ -12,14 +15,14 @@
 <div class="button-bar">
     <a href="/handicap/edit/{{_id}}">
         <button class="allButton">
-            Edit Handicap
+            Edit Content
         </button>
     </a>
     <form action="/handicap/{{_id}}?_method=DELETE" method="POST">
-        <input class="allButton" type="submit" value="Delete Issue" />
+        <input class="allButton" type="submit" value="Delete Content" />
     </form>
 
     <a href="/handicap">
-        <input class="allButton" type="submit" value="Back to Handicap" />
+        <input class="allButton" type="submit" value="Back to Main Data" />
     </a>
 </div>
