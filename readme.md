@@ -1,38 +1,19 @@
-# mehn-template-project
+# Disavailability
+### Readme
 
-# Setup A New Project From This Template
+#### Overview
+Disavailability is online database where users can store and share data about their experiences with others. The target user is any individual who feels set-apart from society for any reason - including dietary preferences, handicap, mental health concerns, etc. The Disavailability database is a user-vetted listing of restaurants, products, doctors, or shopping centers that have helped users with various limitations or disabilities. 
 
-If you are starting a new project do the following:
+#### Project Links
+* [Deployed Application](https://mysterious-retreat-91657.herokuapp.com/)
+* [Trello Board](https://trello.com/b/5ZBWXDbe/disavailability-project-2)
 
-1. copy/download this directory to where you new project is located and rename
-   it to the name of your project.
-1. change your directory (`cd`) into the copied project template
-1. `npm install`
-1. `node ./server.js`
-1. In a new terminal run `curl localhost:3000/helloworld`. You should see
-   `hello world!` as the output. From there your server template works!
-1. see the `controllers`, `models`, and `views` directories' `readme.md` files
+#### Technical Specifications
+* MongoDB and Mongoose to build and interact with the database. 
+* Uses JS, HTML, and CSS.
+* Had 3 models with specific schema's to intake the user data. 
+* RESTful API.
+* Deployed via Heroku
 
-# Setup A New Project Without This Template
-
-If you want to start a project without using this template directory do the
-following:
-
-
-1. `mkdir <project-name>`
-1. `cd <project-name>`
-1. `echo "# <project-name>" > readme.md`
-1. `git init`
-1. `git add readme.md `
-1. `git commit -m "init repo with readme.md"`
-1. `npm init`
-1. `npm install express hbs method-override`
-1. `mkdir models views controllers`
-1. `touch ./server.js`
-
-# Testing Your Api
-
-Run
-    ./testWebAPI -h
-for instructions on how to test your web API. In short this is a BASH script
-wrapper around the `curl` command which is used for making http requests.
+#### Wireframe and ERD
+![alt-text](public/wireframe1.HEIC)
