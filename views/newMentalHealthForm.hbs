@@ -1,28 +1,29 @@
 <h1>New Mental Health Awareness Content</h1>
 <div class="content">
-<form action="/mentalHealth" method="POST" />
-<select name="category">
-    <option value="Restaurant">Restaurant</option>
-    <option value="Product">Product</option>
-    <option value="Shopping Center">Shopping Center</option>
-    <option value="Doctor">Doctor</option>
-</select><br>
-Name:<br>
-<input type="text" name="name" placeholder="name" /><br>
-Help with Depression:<br>
-<input type="radio" name="depressionHelp" value="true" /><br>
-<input type="radio" name="depressionHelp" value="false" /><br>
-Help with Anxiety:<br>
-<input type="radio" name="anxietyHelp" value="true" /><br>
-<input type="radio" name="anxietyHelp" value="false" /><br>
-Help with PTSD:<br>
-<input type="radio" name="ptsdHelp" value="true" /><br>
-<input type="radio" name="ptsdHelp" value="false" /><br>
-Description: <br>
-<input type="text" name="description" placeholder="description" /><br>
-Image:<br>
-<input type="text" name="picture" placeholder="picture" /><br><br>
+    <form action="/mentalHealth" method="POST" />
+    <select name="category">
+        <option value="Restaurant">Restaurant</option>
+        <option value="Product">Product</option>
+        <option value="Shopping Center">Shopping Center</option>
+        <option value="Doctor">Doctor</option>
+    </select><br>
+    Name:<br>
+    <input type="text" name="name" placeholder="name" /><br>
+    Help with Depression:<br>
+    <input type="radio" name="depressionHelp" value="true" />Yes<br>
+    <input type="radio" name="depressionHelp" value="false" />No<br>
+    Help with Anxiety:<br>
+    <input type="radio" name="anxietyHelp" value="true" />Yes<br>
+    <input type="radio" name="anxietyHelp" value="false" />No<br>
+    Help with PTSD:<br>
+    <input type="radio" name="ptsdHelp" value="true" />Yes<br>
+    <input type="radio" name="ptsdHelp" value="false" />No<br>
+    Description: <br>
+    <textarea rows="2" cols="25" name="description" class="description-box"> {{description}}
+</textarea> <br>
+    Image:<br>
+    <input type="text" name="picture" placeholder="picture" /><br><br>
 
-<input class="allButton" type="submit" value="Create" />
-</form>
+    <input class="allButton" type="submit" value="Create" />
+    </form>
 </div>
