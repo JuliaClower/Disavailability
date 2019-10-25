@@ -1,26 +1,29 @@
-<h1>One Allergy</h1>
+<h1>{{name}}</h1>
+<div class="content">
 
-<p>Category: {{category}}</p>
-<p>Name: {{name}}</p>
-<p>Allergy Friendly: {{allergyFriendly}}</p>
-<p>Vegetarian Friendly: {{vegetarianFriendly}}</p>
-<p>Vegan Friendly: {{veganFriendly}}</p>
-<p>Keto Friendly: {{ketoFriendly}}</p>
-<p>Description: {{description}}</p>
-<p>Picture: {{picture}}</p>
-
-    <a href="/allergy/edit/{{_id}}">
+    <p class="nolist">Category: {{category}}</p>
+    <p class="nolist">Name: {{name}}</p>
+    <p class="nolist">Allergy Friendly: {{allergyFriendly}}</p>
+    <p class="nolist">Vegetarian Friendly: {{vegetarianFriendly}}</p>
+    <p class="nolist">Vegan Friendly: {{veganFriendly}}</p>
+    <p class="nolist">Keto Friendly: {{ketoFriendly}}</p>
+    <p class="nolist">Description: {{description}}</p>
+</div>
+{{#if picture}}
+<img class="onePicture" src="{{picture}}" />
+{{/if}}
+<br>
+<div class="button-bar">
+    <a href="/dietaryPref/edit/{{_id}}">
         <button class="allButton">
-            Edit Allergy
+            Edit Content
         </button>
     </a>
-    <form action="/allergy/{{_id}}?_method=DELETE" method="POST">
-        <input class="allButton" type="submit" value="Delete Allergy" />
+    <form action="/dietaryPref/{{_id}}?_method=DELETE" method="POST">
+        <input class="allButton" type="submit" value="Delete Content" />
     </form>
 
-
-
-    <a href="/allergy">
-        <input class="allButton" type="submit" value="Back to Allergy" />
+    <a href="/dietaryPref">
+        <input class="allButton" type="submit" value="Back to Main Data" />
     </a>
 </div>
